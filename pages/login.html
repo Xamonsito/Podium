@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>התחברות</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <a class="logo" href="../index.html">🏛️</a>
+    <div class="menu" id="menu">
+      <a href="/Voter/pages/account.html">החשבון שלי</a>
+      <a href="/Voter/pages/contact.html">צור קשר</a>
+    </div>
+  </div>
+
+  <main class="login-container">
+    <h2>התחברות למערכת</h2>
+    <input type="text" id="username" placeholder="שם משתמש" required />
+    <input type="password" id="password" placeholder="סיסמה" required />
+    <button onclick="loginUser()">התחבר</button>
+
+    <div class="login-links">
+      <a href="#">שכחתי סיסמה</a>
+    </div>
+
+    <div class="social-login">
+      <button class="google">התחבר עם Google</button>
+      <button class="facebook">התחבר עם Facebook</button>
+    </div>
+  </main>
+</body>
+</html>

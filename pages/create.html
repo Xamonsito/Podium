@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>צור משאל</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <a class="logo" href="../index.html">🏛️</a>
+    <div class="menu" id="menu">
+      <a href="pages/account.html">החשבון שלי</a>
+      <a href="pages/contact.html">צור קשר</a>
+      <a href="#" onclick="logout()">התנתק</a>
+    </div>
+  </div>
+
+  <main class="create-form">
+    <h2>צור משאל חדש</h2>
+    <form onsubmit="createPoll(event)">
+      <input type="text" id="title" placeholder="כותרת המשאל (עד 100 תווים)" maxlength="100" required />
+      <input type="file" id="image" accept="image/*" required />
+      <button type="submit">פרסם</button>
+    </form>
+  </main>
+</body>
+</html>

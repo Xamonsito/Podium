@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>צור קשר</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <a class="logo" href="../index.html">🏛️</a>
+    <div class="menu" id="menu">
+      <a href="pages/account.html">החשבון שלי</a>
+      <a href="pages/contact.html">צור קשר</a>
+      <a href="#" onclick="logout()">התנתק</a>
+    </div>
+  </div>
+
+  <main class="contact-container">
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('ההודעה נשלחה!')">
+      <h2>צור קשר</h2>
+
+      <label for="name">שם:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">דוא"ל:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">הודעה:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">שלח</button>
+    </form>
+  </main>
+</body>
+</html>

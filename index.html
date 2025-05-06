@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פודיום</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()" title="תפריט">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <a class="logo" href="index.html" title="חזרה לפודיום">🏛️</a>
+    <div class="menu" id="menu">
+      <a href="/account.html" title="החשבון שלי">החשבון שלי</a>
+      <a href="/contact.html" title="צור קשר">צור קשר</a>
+      <a href="#" onclick="logout()" title="התנתקות מהמערכת">התנתק</a>
+    </div>
+  </div>
+
+  <div id="polls-container" class="polls-container"></div>
+
+  <div class="mic-button" onclick="goToCreatePoll()" title="צור משאל חדש">
+    <img src="icons/microphone.png" alt="צור" />
+  </div>
+
+  <div class="bottom-bar">
+    <img src="icons/how-to-vote.png" onclick="sortPolls('most')" title="הכי מוצבע" alt="הכי מוצע" />
+    <img src="icons/filter.png" onclick="sortPolls('newest')" title="הכי חדש" alt="הכי חדש" />
+    <img src="icons/surprise-box.png" onclick="sortPolls('random')" title="אקראי" alt="אקראי" />
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
